@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq Section</title>
+</head>
+
+<body>
+
+<style>
+    
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+h2,
+h4 {
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    padding: 100px 0px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.col {
+    max-width: calc(50% - 20px);
+    width: 100%;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 100%;
+    font-weight: 400;
+    color: #000;
+}
+
+.single-list{
+    border-bottom: 1px solid #d9dddb;
+    padding: 24px 0px 23px;
+}
+
+.faq-title{
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.faq-title h4{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    max-width: calc(100% - 40px);
+}
+
+.faq-title .faq-icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.faq-title .faq-icon::after,
+.faq-title .faq-icon::before{ 
+    content: "";
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.faq-title .faq-icon::after{
+    width: 100%;
+    height: 1px;
+}
+
+.faq-title .faq-icon::before{
+    width: 1px;
+    height:100%;
+}
+
+.single-list.active .faq-title .faq-icon::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-content p{
+    padding: 16px 0px;
+}
+
+
+@media(max-width:767px){
+
+section {
+    padding: 50px 20px;
+}
+
+.col {
+    max-width:100%;
+}
+
+h2{
+    font-size: 32px;
+}
+
+}
+
+
+</style>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Questions? We've got answers.</h2>
+                </div>
+                <div class="col">
+                    <div class="faq-list">
+                        <div class="single-list">
+                            <div class="faq-title">
+                                <h4>What is AG1?</h4>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-content">
+                                <p>AG1 is made with 70+ carefully selected ingredients – including vitamins, minerals, plant compounds and whole-food sourced ingredients, as well as bacterial cultures – all chosen for their quality, bioavailability, and role in supporting daily health. You can explore the full list here.</p>
+                            </div>
+                        </div>
+
+                        <div class="single-list">
+                            <div class="faq-title">
+                                <h4>Which ingredients are in AG1?</h4>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-content">
+                                <p>AG1 is made with 70+ carefully selected ingredients – including vitamins, minerals, plant compounds and whole-food sourced ingredients, as well as bacterial cultures – all chosen for their quality, bioavailability, and role in supporting daily health. You can explore the full list here.</p>
+                            </div>
+                        </div>
+                        <div class="single-list">
+                            <div class="faq-title">
+                                <h4>How do I know if AG1 is right for me?</h4>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-content">
+                                <p>AG1 is for anyone looking to build a consistent, effective daily habit. Whether you're looking to support your energy,2 focus,4 immunity,1 or digestion,7 AG1 helps you take care of the essentials – so you can focus on everything else. Because nutritional needs can change during pregnancy and breastfeeding, AG1 isn’t formulated for those life stages. Please also consult the additional information in our footer for more details.</p>
+                            </div>
+                        </div>
+                        <div class="single-list">
+                            <div class="faq-title">
+                                <h4>What products does AG1 replace?</h4>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-content">
+                                <p>AG1 is designed to simplify your routine by combining multiple supplements into one scoop. It taps into areas typically supported by a multivitamin, minerals, bacterial cultures, and greens powders – all in one daily habit. Find out more here.</p>
+                            </div>
+                        </div>
+                        <div class="single-list">
+                            <div class="faq-title">
+                                <h4>How does AG1 taste?</h4>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-content">
+                                <p>AG1 has a light, refreshing taste – slightly sweet with notes of pineapple and vanilla. No added sugar, no artificial flavours – just a flavour profile that’s easy to enjoy, day after day. Learn more here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqItems = document.querySelectorAll('.faq-list .single-list');
+
+            // Function to close all FAQs
+            function closeAllFaqs() {
+                faqItems.forEach(item => {
+                    item.classList.remove('active');
+                    const panel = item.querySelector('.faq-content');
+                    panel.style.maxHeight = null;
+                });
+            }
+
+            // Attach click event to each FAQ title
+            faqItems.forEach(item => {
+                const title = item.querySelector('.faq-title');
+                const panel = item.querySelector('.faq-content');
+
+                title.addEventListener('click', function () {
+                    const isActive = item.classList.contains('active');
+
+                    closeAllFaqs(); // Close all first
+
+                    if (!isActive) {
+                        item.classList.add('active');
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            });
+
+            // Open the first FAQ by default
+            if (faqItems.length > 0) {
+                const firstItem = faqItems[0];
+                firstItem.classList.add('active');
+                const firstPanel = firstItem.querySelector('.faq-content');
+                firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
